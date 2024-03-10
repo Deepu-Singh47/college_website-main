@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.coll_name {
+  /* font-size: 1vw; */
+  font-family: DM Serif Display;
+}
+/* .small_text {
+  font-size: 20px;
+} */
+.upm {
+  box-shadow: 0px 0px 4px 2px;
+}
+.title {
+  border-bottom: 1px solid;
+}
+/* .lf {
+  color: white;
+}
+.lf:hover {
+  background-color: white;
+  color: blue;
+}
+.rt {
+  color: white;
+}
+.rt:hover {
+  background-color: rgb(188, 200, 233);
+  color: blue;
+  border-radius: 8px;
+} */

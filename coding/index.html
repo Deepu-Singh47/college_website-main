@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="custom.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="text-sm upm mb-4 min-h-5 bg-blue-800 grid grid-cols-2">
+          <div class="flex justify-start text-white">
+            <a href=""><button class="mx-2 px-3 py-3">MoE</button></a
+            ><a href=""><button class="mx-2 px-3 py-3">UGC</button></a
+            ><a href=""
+              ><button class="mx-2 px-3 py-3">
+                Certificate of Recognition
+              </button></a
+            ><a href=""><button class="mx-2 px-3 py-3">DU</button></a>
+          </div>
+          <div class="flex justify-end text-white">
+            <a href=""><button class="mx-1 px-2 py-3">A+</button></a
+            ><a href=""><button class="mx-1 px-2 py-3">A-</button></a
+            ><a href=""
+              ><button class="mx-3 px-5 py-3">ONLINE PAYMENT</button></a
+            ><a href=""><button class="mx-2 px-3 py-3">ALUMNI</button></a>
+            <a href=""><button class="mx-2 px-3 py-3">NAAC</button></a>
+            <a href=""><button class="mx-2 px-3 py-3">NIRF</button></a>
+          </div>
+        </div>
+        <div
+          class="title min-h-5 grid grid-cols-5 sm:grid-cols-9 sm:mx-4 sm:my-2"
+        >
+          <div
+            class="order-1 sm:order-1 col-start-3 col-end-3 sm:col-span-1 my-4 lg:mx-1 flex items-center"
+          >
+            <div>
+              <a href=""><img src="images/college logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div
+            class="order-3 sm:order-2 col-start-2 col-end-2 mx-1 p-2 sm:p-3 flex items-center"
+          >
+            <div>
+              <a href=""><img src="images/DU_NEW_LOGO.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div
+            class="order-2 sm:order-3 col-span-5 mb-5 lg:mx-1 flex justify-center"
+          >
+            <div class="lg:py-6">
+              <div
+                class="pb-3 text-3xl sm:text-3xl md:text-3xl lg:text-5xl sm:flex"
+              >
+                <div>
+                  <h1 class="coll_name text-center text-blue-600">KESHAV</h1>
+                </div>
+                <div>
+                  <h1 class="coll_name text-center text-blue-600">
+                    MAHAVIDYALAYA
+                  </h1>
+                </div>
+              </div>
+              <div class="text-xs lg:text-sm">
+                <p class="text-center">NAAC Accredited 'A' Grade Cycle 2</p>
+              </div>
+              <div class="text-xs lg:text-sm">
+                <p class="text-center">University of Delhi</p>
+              </div>
+              <div class="text-xs lg:text-sm">
+                <p class="text-center">
+                  Estd. in 1994, fully funded by Govt of NCT Delhi
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="order-4 sm:p-3 flex items-center">
+            <div>
+              <a href=""
+                ><img src="images/G20_India_2023_logo.svg.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="order-5 sm:order-5 sm:p-3 mx-1 flex items-center">
+            <div>
+              <a href=""
+                ><img src="images/Azadi-Ka-Amrit-Mahotsav-Logo.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative" x-data="{ open: false }">
+      <button
+        @click="open = !open"
+        class="bg-blue-500 text-white font-semibold py-2 px-4 rounded inline-flex items-center"
+      >
+        <span>Dropdown</span>
+        <svg
+          class="fill-current h-4 w-4 ml-2"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M10 12l-6-6h12l-6 6z" />
+        </svg>
+      </button>
+      <ul
+        class="absolute text-gray-700 pt-1 bg-white border border-gray-300 rounded mt-1"
+        x-show="open"
+        @click.away="open = false"
+      >
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-200" href="#">Option 1</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-200" href="#">Option 2</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-200" href="#">Option 3</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
